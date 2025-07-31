@@ -15,7 +15,7 @@ bash arch_config.sh
 ## Project tree
 
 ```
-social-network/
+golden_hyprland/
 ├── scripts/             → Additional scripts
 ├── config/              → Config files
 ├── sprites/             → Sprites created for the design
