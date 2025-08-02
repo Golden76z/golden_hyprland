@@ -1,0 +1,6 @@
+#!/bin/bash
+dir="$HOME/Videos"
+mkdir -p "$dir"
+last_num=$(ls "$dir"/recording_*.mp4 2>/dev/null | sed -n 's/.*_\([0-9]*\)\.mp4/\1/p' | sort -n | tail -1)
+next_num=$((last_num + 1))
+wf-recorder -g "$(slurp)" -f "$dir/recording_$next_num.mp4"

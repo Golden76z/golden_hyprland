@@ -50,7 +50,19 @@ yay -S nwg-look
 yay -S papirus-icon-theme
 yay -S papirus-folders
 
+####################################################
+#		System applications		   #
+####################################################
 
+# screen recorder (https://man.archlinux.org/man/wf-recorder.1.en)
+sudo pacman -S wf-recorder ffmpeg
+# script to run the record
+cp scripts/record_screen ~/bin/
+# Making the file executable
+chmod +x ~/bin/record_screen
+
+# Screen shot
+yay -S hyprshot-git
 
 
 
